@@ -1,0 +1,39 @@
+# =============================================================================
+# DOMAIN-ADAPTIVE SKELETON MODEL - GPT2 + LoRA REQUIREMENTS
+# =============================================================================
+
+# Core Scientific Computing
+numpy==1.24.3                    # Numerical computations
+scipy==1.10.1                    # Scientific computing utilities
+
+# Transformers & NLP
+transformers==4.40.1             # HuggingFace Transformers for GPT2 and LoRA
+datasets==2.19.1                 # HuggingFace Datasets for loading domain data
+peft==0.10.0                     # Parameter-Efficient Fine-Tuning (LoRA) from HuggingFace
+tokenizers==0.19.1               # Fast tokenizers for transformer models
+
+# PyTorch
+torch==2.2.2                     # Deep learning backend (adjust based on CUDA availability)
+accelerate==0.30.1               # Accelerated training (optional for multi-GPU or TPU)
+bitsandbytes==0.41.3             # Optimized 8-bit optimizers (optional if using LoRA with bnb)
+
+# Utilities & Logging
+tqdm==4.66.4                     # Progress bar
+colorlog==6.7.0                  # Colored logging output
+pyyaml==6.0                      # Configuration files
+
+# Development Tools
+pytest==7.4.4                    # Unit testing framework
+black==24.4.2                    # Code formatter
+isort==5.13.2                    # Import sorting
+flake8==7.0.0                    # Code linting
+
+# Optional: for interactive notebooks or visualizations
+# jupyterlab==4.2.1               # Jupyter environment for exploration
+
+# System & Environment
+psutil==5.9.8                    # System utilization metrics
+
+# OS-Specific Dependencies (not for requirements.txt)
+# For CUDA: install correct torch version based on your GPU
+# For macOS: remove bitsandbytes and use CPU-compatible settings
