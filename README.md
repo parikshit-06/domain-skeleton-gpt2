@@ -24,8 +24,9 @@ A lightweight, modular framework for rapid domain adaptation of GPT-2 using Low-
 ├── scripts/
 │   ├── train_LoRA_adapter.py  # Script to train domain adapters
 │   └── inference.py           # Script to load adapters and generate text
-├── requirements.txt      # Python dependencies
-└── README.md             # Project documentation
+├── LICENSE               # MIT Licensed
+├── README.md             # Project documentation
+└── requirements.txt      # Python dependencies
 ```
 
 ---
