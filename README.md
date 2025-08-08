@@ -4,7 +4,7 @@ A lightweight, modular framework for rapid domain adaptation of GPT-2 using Low-
 
 ---
 
-## 🚀 Features
+## Features
 
 * **Skeleton Architecture:** Minimal GPT-2 backbone with hooks for injecting LoRA adapters.
 * **Parameter-Efficient Fine-Tuning:** Only low-rank adapter weights are trained, drastically reducing compute and memory requirements.
@@ -14,7 +14,7 @@ A lightweight, modular framework for rapid domain adaptation of GPT-2 using Low-
 
 ---
 
-## 📦 Repository Structure
+## Repository Structure
 
 ```
 ├── adapters/
@@ -31,7 +31,7 @@ A lightweight, modular framework for rapid domain adaptation of GPT-2 using Low-
 
 ---
 
-## 🔧 Installation
+## Installation
 
 1. Clone the repository:
 
@@ -50,7 +50,7 @@ A lightweight, modular framework for rapid domain adaptation of GPT-2 using Low-
 
 ---
 
-## 📖 Usage
+## Usage
 
 ### 1. Training Domain Adapters
 
@@ -87,7 +87,7 @@ This script:
 
 ---
 
-## ⚙️ Configuration
+## Configuration
 
 * **BASE\_MODEL:** GPT-2 preset in Hugging Face transformers
 * **LoRA Settings:**
@@ -98,7 +98,7 @@ This script:
 
 ---
 
-## 🎯 Example
+## Example
 
 ```bash
 # Train sports adapter
@@ -109,14 +109,14 @@ python scripts/inference.py --adapter_path ./adapters/sports --prompt "The final
 
 ---
 
-## 📈 Evaluation
+## Evaluation
 
 * Track losses and perplexity in TensorBoard under each adapter folder (`./adapters/<domain>/runs`).
 * Sample generation outputs in `scripts/inference.py`.
 
 ---
 
-## 📝 Contributing
+## Contributing
 
 1. Fork this repo
 2. Create a new branch: `git checkout -b feature/your-feature`
@@ -126,7 +126,7 @@ python scripts/inference.py --adapter_path ./adapters/sports --prompt "The final
 
 ---
 
-## 📜 License
+## License
 
 This project is released under the MIT License. See [LICENSE](LICENSE) for details.
 
